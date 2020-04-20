@@ -1,4 +1,4 @@
-# CovidTracker
+# Covid-19 Tracker
 Live tracker for corona virus, simple and clean looking.
 Data is copied from World Health Organisation in real time.
 Bootstrap is used mainly for grid, and ChartsJS for charts, everything else is created from scratch. 
