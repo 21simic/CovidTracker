@@ -37,15 +37,15 @@ function getKosovoStats() {
 
         const ctx = document.getElementById('kosovoChart').getContext('2d');
         const myChart = new Chart(ctx, {
-            type: 'bar',
+            type: 'doughnut',
             data: {
-                labels: ['Infected', 'Recovered', 'Deaths'],
+                labels: ['Man', 'Woman', 'Unconfirmed'],
                 datasets: [
                 {
                     label: '',
                     backgroundColor: 
                     [colors.blue, colors.green, colors.red],                           
-                    data: [infected, recovered, deaths]          
+                    data: [196, 166, 148]         
                 }]
             },
         });
@@ -66,7 +66,7 @@ function getGlobalStats() {
 
         const ctx = document.getElementById('globalChart').getContext('2d');
         const myChart = new Chart(ctx, {
-            type: 'doughnut',
+            type: 'bar',
             data: {
                 labels: ['Infected', 'Recovered', 'Deaths'],
                 datasets: [
